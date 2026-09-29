@@ -1,0 +1,143 @@
+{
+  "NAME": "RESTCOUNTRIES",
+  "Name": "Restcountries",
+  "api": {
+    "base": "https://restcountries.com/v3.1",
+    "desc": "Unofficial SDK for the REST Countries API generated using the Voxgig SDK generator.",
+    "homepage": "https://restcountries.com",
+    "name": "Restcountries",
+    "title": "REST Countries API"
+  },
+  "def": "restcountries-openapi3.yml",
+  "edition": {},
+  "entity": {
+    "country": {
+      "desc": "Country information from REST Countries.",
+      "name": "country",
+      "op": {
+        "list": {
+          "method": "GET",
+          "path": "/all"
+        },
+        "load": {
+          "method": "GET",
+          "path": "/name/{name}"
+        }
+      },
+      "title": "Country"
+    }
+  },
+  "feature": {},
+  "flow": {},
+  "main": {
+    "api": {
+      "entity": {},
+      "guide": {}
+    },
+    "custom": {
+      "plurals": {}
+    },
+    "def": {
+      "desc": ""
+    },
+    "kit": {
+      "author": {
+        "name": "",
+        "url": ""
+      },
+      "config": {
+        "docs_order": [
+          "ts",
+          "py",
+          "php",
+          "go",
+          "rb",
+          "lua"
+        ],
+        "headers": {
+          "content-type": "application/json"
+        },
+        "repr": "auto"
+      },
+      "contributor": {},
+      "entity": {},
+      "feature": {},
+      "flow": {},
+      "info": {},
+      "option": {},
+      "optspec": {
+        "allow": {
+          "method": "GET,PUT,POST,PATCH,DELETE,OPTIONS",
+          "op": "create,update,load,list,remove,command,direct,graphql"
+        },
+        "apikey": "",
+        "auth": {
+          "basic": false,
+          "in": "",
+          "name": "",
+          "prefix": ""
+        },
+        "base": "http://localhost:8000",
+        "clean": {
+          "keys": "key,token,id"
+        },
+        "entity": {
+          "`$CHILD`": {
+            "`$OPEN`": true,
+            "active": false,
+            "alias": {}
+          }
+        },
+        "extend": "`$ANY`",
+        "headers": {
+          "`$CHILD`": "`$STRING`"
+        },
+        "prefix": "",
+        "secret": "",
+        "server": {
+          "`$CHILD`": ""
+        },
+        "suffix": "",
+        "system": {
+          "fetch": "`$ANY`"
+        },
+        "test": {
+          "active": false,
+          "entity": {
+            "`$OPEN`": true
+          }
+        },
+        "utility": {}
+      },
+      "phase": {
+        "build": {
+          "active": true
+        },
+        "top": {
+          "active": true
+        }
+      },
+      "repo": {
+        "host": "github.com",
+        "path": ""
+      },
+      "target": {},
+      "test": {
+        "live": {
+          "app": false,
+          "base": "",
+          "strict": true
+        }
+      }
+    }
+  },
+  "name": "restcountries",
+  "name-": "restcountries",
+  "name_": "restcountries",
+  "name__orig": "restcountries",
+  "origin": "voxgig-sdk",
+  "target": {
+    "py": {},
+    "ts": {}
+  }
+}

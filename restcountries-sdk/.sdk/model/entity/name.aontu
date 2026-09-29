@@ -1,0 +1,74 @@
+# Entity: name
+
+main: kit: entity: name: {
+
+  alias: field: {}
+
+  fields: {
+    id: {
+      h: "Id"
+      n: "id"
+      r: false
+      t: "`$STRING`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+  }
+
+  name: "name"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /name/{name}"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                k: "param"
+                n: "id"
+                or: "name"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/name/{name}"
+          q: {
+            exist: [
+              "id"
+            ]
+          }
+          r: {
+            param: {
+              name: "id"
+            }
+          }
+          s: [
+            {
+              lit: "name"
+            }
+            {
+              var: "id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

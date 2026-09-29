@@ -1,0 +1,17 @@
+entity: {
+  country: {
+    name: "country"
+    title: "Country"
+    desc: "Country information from REST Countries."
+    op: {
+      list: {
+        path: "/all"
+        method: "GET"
+      }
+      load: {
+        path: "/name/{name}"
+        method: "GET"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  point: "warning"
+  err: {
+    name: "Error"
+    message: "@voxgig/apidef: parse: OpenAPI: source is empty (.\\def\\restcountries-openapi3.yml)"
+    stack: `Error: @voxgig/apidef: parse: OpenAPI: source is empty (.\\def\\restcountries-openapi3.yml)
+    at validateSource (C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\restcountries-voxgig-sdk\\restcountries-sdk\\.sdk\
+ode_modules\\@voxgig\\apidef\\dist\\parse.js:320:15)
+    at parse (C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\restcountries-voxgig-sdk\\restcountries-sdk\\.sdk\
+ode_modules\\@voxgig\\apidef\\dist\\parse.js:21:9)
+    at Object.generate (C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\restcountries-voxgig-sdk\\restcountries-sdk\\.sdk\
+ode_modules\\@voxgig\\apidef\\dist\\apidef.js:183:49)
+    at Object.build [as action] (C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\restcountries-voxgig-sdk\\restcountries-sdk\\.sdk\
+ode_modules\\@voxgig\\apidef\\dist\\apidef.js:400:29)
+    at Object.local_producer [as build] (C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\restcountries-voxgig-sdk\\restcountries-sdk\\.sdk\
+ode_modules\\@voxgig\\model\\dist\\producer\\local.js:55:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BuildImpl.run (C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\restcountries-voxgig-sdk\\restcountries-sdk\\.sdk\
+ode_modules\\@voxgig\\model\\dist\\build.js:56:30)
+    at async Watch.run (C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\restcountries-voxgig-sdk\\restcountries-sdk\\.sdk\
+ode_modules\\@voxgig\\model\\dist\\watch.js:166:22)
+    at async generate (C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\restcountries-voxgig-sdk\\restcountries-sdk\\.sdk\
+ode_modules\\@voxgig\\model\\bin\\voxgig-model:258:16)
+    at async run (C:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\restcountries-voxgig-sdk\\restcountries-sdk\\.sdk\
+ode_modules\\@voxgig\\model\\bin\\voxgig-model:46:5)`
+  }
+
+  note: "!! BUILD FAILED !! @voxgig/apidef: parse: OpenAPI: source is empty (.\\def\\restcountries-openapi3.yml)"
+}

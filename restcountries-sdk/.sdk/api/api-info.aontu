@@ -1,0 +1,7 @@
+api: {
+  name: "Restcountries"
+  title: "REST Countries API"
+  desc: "Unofficial SDK for the REST Countries API generated using the Voxgig SDK generator."
+  homepage: "https://restcountries.com"
+  base: "https://restcountries.com/v3.1"
+}

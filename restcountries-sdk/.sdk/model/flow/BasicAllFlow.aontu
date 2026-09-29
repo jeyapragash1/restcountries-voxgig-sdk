@@ -1,0 +1,22 @@
+# BasicAllFlow
+
+main: kit: flow: BasicAllFlow:
+{
+  entity: "all",
+  kind: "basic",
+  name: "BasicAllFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "all_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicAllFlow"
+}

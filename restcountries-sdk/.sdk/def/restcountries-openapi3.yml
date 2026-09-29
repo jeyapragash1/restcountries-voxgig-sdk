@@ -1,0 +1,40 @@
+openapi: 3.0.3
+info:
+  title: REST Countries API
+  version: 1.0.0
+  description: Unofficial OpenAPI specification for selected REST Countries endpoints.
+servers:
+  - url: https://restcountries.com/v3.1
+paths:
+  /all:
+    get:
+      summary: List all countries
+      operationId: listCountries
+      responses:
+        "200":
+          description: A list of countries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+  /name/{name}:
+    get:
+      summary: Search countries by name
+      operationId: getCountryByName
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Countries matching the name
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object

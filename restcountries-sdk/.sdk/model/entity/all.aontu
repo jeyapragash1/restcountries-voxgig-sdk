@@ -1,0 +1,39 @@
+# Entity: all
+
+main: kit: entity: all: {
+
+  alias: field: {}
+
+  name: "all"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /all"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/all"
+          s: [
+            {
+              lit: "all"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

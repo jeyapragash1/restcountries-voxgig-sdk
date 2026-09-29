@@ -1,0 +1,21 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      description: "Unofficial OpenAPI specification for selected REST Countries endpoints."
+      servers: [
+        {
+          url: "https://restcountries.com/v3.1"
+        }
+      ]
+      summary: "Unofficial OpenAPI specification for selected REST Countries endpoints."
+      title: "REST Countries API"
+      version: "1.0.0"
+      website: "https://restcountries.com"
+    }
+  }
+}
+
