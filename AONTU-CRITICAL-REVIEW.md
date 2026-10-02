@@ -59,7 +59,7 @@ There were useful details in the output. It identified the including file, highl
 
 Nevertheless, I struggled to turn that information into a recovery decision. Should I change the working directory, repair the generated configuration, or rerun an earlier setup step? The diagnostic showed where resolution had failed, but I could not confidently determine which part of the toolchain needed attention.
 
-In the repository state I examined later, `.sdk/test/struct/test.aontu ` was present. This does not prove that the file was present in the same state when the error occurred, nor does it establish a resolver bug. It does show why describing the problem simply as “a missing file” would be too confident. The message establishes a failed lookup; the underlying reason needs further investigation.
+In the repository state I examined later, `.sdk/test/struct/test.aontu` was present. This does not prove that the file was present in the same state when the error occurred, nor does it establish a resolver bug. It does show why describing the problem simply as “a missing file” would be too confident. The message establishes a failed lookup; the underlying reason needs further investigation.
 
 There is another limitation to my evidence: I manually added model files while troubleshooting. Those changes mean the later errors cannot all be treated as observations from an untouched generated project. A useful review should acknowledge that instead of presenting every subsequent failure as a separate product defect.
 
